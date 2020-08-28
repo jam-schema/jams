@@ -1,15 +1,15 @@
 Dear reader,
 
-Author lists are a pillar of scholarly communication and rewarding system.
+author lists are a pillar of scholarly communication and rewarding system.
 On the other hand, the number of tools to create scholarly outputs requiring an author list is growing exponentially,
 with software and dataset being published on top of research manuscripts.
-Each system gets its own author information entry (and epxport) points, and they are not talking to each other.
+Each system gets its own author information entry (and export) points, and they are not talking to each other.
 
-**We would like to create to a common, open standard that could be used as a transfer points between the different formats,
+**We would like to create a common, open standard that could be used as a transfer point between the different formats,
 and build tools to transform the metadata from one format to the other.**
 
-We are biaised toward markdown created documents, i.e. yaml-formatted metadata,
-but we are hoping to get more use case and inputs from YOU. 
+We are biased toward markdown-based documents, i.e. yaml-formatted metadata,
+but we are hoping to get more use cases and input from YOU. 
 
 We are using Github for asynchronous work, while we try to meet regularly in online meetings.
 
