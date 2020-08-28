@@ -50,7 +50,7 @@ affiliations:
 ~~~
 
 More incompatibilities arise when we switch tools.
-For example, Manubot uses yet another structure to represent this information:
+For example, Manubot uses yet another structure to represent this information,
 
 ~~~yaml
 authors:
@@ -63,8 +63,22 @@ authors:
       - Department of Whatever, University of Something
 ~~~
 
+while the format for the same information in zenodo looks largely different:
+
+~~~json
+{
+  "creators": [
+    {
+      "affiliation": "Department of Something, University of Whatever",
+      "name": "John Doe",
+      "orcid": "0000-0001-7288-XXXX"
+    }
+~~~
+
 Our goal is to develop a general representation of this information that allows us to convert from one format to another.
-If we succeed, we will be able to make these different types of YAML front matter interoperable, for example, via a `pandoc` extension that is responsible for the translation (NB: other elements may not be compatible between `rticles` templates, but we hope you got the idea).
+If we succeed, we will for example be able to make these different types of YAML front matter interoperable, for example, via a `pandoc` extension that is responsible for the translation ? 
+(NB: other elements may not be compatible between `rticles` templates, but we hope you got the idea). 
+While we hope to go beyond YAML frontmatter for manuscript creation, we are planning to start there.
 
 Besides the basic information given in the examples above, the standard should of course include fields for things like, contribution roles (CRediT, CRO, and/or datacite roles), e-mail addresses, or ORCiD.
 
