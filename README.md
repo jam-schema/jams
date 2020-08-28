@@ -63,7 +63,7 @@ authors:
       - Department of Whatever, University of Something
 ~~~
 
-while the format for the same information in zenodo looks largely different:
+while the format for the same information in [zenodo](https://zenodo.org/) looks largely different:
 
 ~~~json
 {
@@ -76,11 +76,11 @@ while the format for the same information in zenodo looks largely different:
 ~~~
 
 Our goal is to develop a general representation of this information that allows us to convert from one format to another.
-If we succeed, we will for example be able to make these different types of YAML front matter interoperable, for example, via a `pandoc` extension that is responsible for the translation ? 
+If we succeed, we will for example be able to make these different types of YAML front matter interoperable, via a `pandoc` extension that is responsible for the translation
 (NB: other elements may not be compatible between `rticles` templates, but we hope you got the idea). 
-While we hope to go beyond YAML frontmatter for manuscript creation, we are planning to start there.
+While we hope to go beyond YAML front matter for manuscript creation, we are planning to start there.
 
-Besides the basic information given in the examples above, the standard should of course include fields for things like, contribution roles (CRediT, CRO, and/or datacite roles), e-mail addresses, or ORCiD.
+Besides the basic information given in the examples above, the standard should of course include fields for things like, e-mail addresses, ORCiD, and contribution roles (CRediT, CRO, and/or datacite roles).
 
 The Initiators
 ==============
