@@ -13,6 +13,10 @@ but we are hoping to get more use cases and input from YOU.
 
 We are using Github for asynchronous work, while we try to meet regularly in online meetings.
 
+Please use this form to express your interest and be invited to our next online meeting: https://docs.google.com/forms/d/e/1FAIpQLSfShr9808kUIzUDAtAgJFT_ngDd6myUnWIFDxskWrRp3eBJWA/viewform?usp=sf_link
+
+Julien Colomb, on behalf of the Jams team.
+
 ---
 
 Github home: https://github.com/jam-schema/jams
