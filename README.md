@@ -7,14 +7,14 @@ Standardized method to represent scholarly metadata in JSON or YAML.
 Project Background
 ==================
 
-We are using different tools to produce and use author lists, and it would be great if we could transform author list written for one tool, into the author list another tool is using.
+We are using different tools to produce and use author lists, and it would be great if we could transform an author list written for one tool into the author list another tool is using.
 To do this transformation, we want to follow the pandoc "sandglass" logic where a general representation is used as a flexible intermediate format to convert between different author metadata formats.
 We want to develop an open standard for this general metadata representation.
 For this purpose, we are trying to initiate a braod discussion and build a community of people interested in the creation and exchange of author lists.
 
 As an example, consider the [`rticles`](https://github.com/rstudio/rticles) R-package or [Manubot](https://manubot.org/).
 With both tools you can write a markdown-based manuscript, translate them to TeX, and render a PDF document.
-The problem is that even within `rticles` it is not possible simply switch manuscript styles without adpating the YAML front matter, which contains the author metadata.
+The problem is that even within `rticles`, it is not possible to simply switch manuscript styles without adpating the YAML front matter, which contains the author metadata.
 Consider the following simplified example taken from the PLOS template:
 
 ~~~yaml
