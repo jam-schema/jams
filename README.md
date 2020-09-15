@@ -86,5 +86,5 @@ The Initiators
 ==============
 
 We are people interested using markdown and `pandoc` to write manuscripts, and include contributor lists in research outputs (datasets, software, artilces).
-We work on different projects like [GIN](gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing) and [`papaja`](https://github.com/crsh/papaja).
+We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing) and [`papaja`](https://github.com/crsh/papaja).
 
