@@ -10,6 +10,7 @@ author:
   - affiliation:
     - ref1
     - ref2
+  - part-of-group:   
   - attributes:
     - is.corresponding.author: no
     - type: author
