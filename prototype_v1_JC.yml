@@ -1,0 +1,27 @@
+author:
+  - string-name:
+  - surname:
+  - given-names:
+  - email:
+  - PID:
+    - type: orcid-id
+    - id:
+  - role:
+  - affiliation:
+    - ref1
+    - ref2
+  - attributes:
+    - is.corresponding.author: no
+    - type: author
+    
+Affiliation:
+  - refid: ref1
+  - name:
+  - PID:
+    - type:
+    - number:
+  - city:
+  - region:
+  - postal.code:
+  - country.code:
+  - country:
