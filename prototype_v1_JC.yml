@@ -20,7 +20,7 @@ Affiliation:
   - name:
   - PID:
     - type:
-    - number:
+    - id:
   - city:
   - region:
   - postal.code:
