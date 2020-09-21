@@ -17,8 +17,7 @@ author:
       type: author
     
 Affiliation:
-  -
-    refid: ref1
+  - refid: ref1
     name: Humboldt-Universität zu Berlin, SFB1315, Inst. of Biology, Charitéplatz 1,  10117 Berlin
     PID:
       type: RINGGOLD

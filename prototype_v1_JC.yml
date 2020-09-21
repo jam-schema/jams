@@ -1,28 +1,28 @@
 author:
-  - string-name:
-  - surname:
-  - given-names:
-  - email:
-  - PID:
-    - type: orcid-id
-    - id:
-  - role:
-  - affiliation:
-    - ref1
-    - ref2
-  - part-of-group:   
-  - attributes:
-    - is.corresponding.author: no
-    - type: author
+  -
+    string-name:
+    surname: 
+    given-names: 
+    email: 
+    PID:
+      type: orcid-id
+      id: 
+    role:
+    affiliation:
+      ref1
+    part-of-group: NA   
+    attributes:
+      is.corresponding.author: no
+      type: author
     
 Affiliation:
-  - refid: ref1
-  - name:
-  - PID:
-    - type:
-    - id:
-  - city:
-  - region:
-  - postal.code:
-  - country.code:
-  - country:
+  - refid: 
+    name: 
+    PID:
+      type: RINGGOLD
+      id: 
+    city: 
+    region: 
+    postal.code: 
+    country.code: 
+    country: 
