@@ -9,7 +9,7 @@ author:
       id: 
     role:
     affiliation:
-      ref1
+      aff_01
     part-of-group: NA   
     attributes:
       is.corresponding.author: no

@@ -10,14 +10,14 @@ author:
     role:
       Conceptualization: created first prototype
     affiliation:
-      ref1
+      aff_01
     part-of-group: NA   
     attributes:
       is.corresponding.author: yes
       type: author
     
 Affiliation:
-  - refid: ref1
+  - refid: aff_01
     name: Humboldt-Universität zu Berlin, SFB1315, Inst. of Biology, Charitéplatz 1,  10117 Berlin
     PID:
       type: RINGGOLD
