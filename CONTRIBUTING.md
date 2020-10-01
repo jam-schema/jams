@@ -8,4 +8,6 @@ You can contribute in different ways:
 - Please refer to https://github.com/jam-schema/jams/issues/7 to share your email and get invited to our monthly call.
 - If you like to contribute but do not want to use any of the two options above, please contact the maintainer directly via email and we will look at a way to facilitate your contribution.
 
-julien.colomb [at] fu-berlin.de
+You may also want to look at an extensive Github tutorial here: https://www.youtube.com/watch?v=Wui21rKrCNk&ab_channel=OpenLifeSci
+
+current maintainer: julien.colomb [at] fu-berlin.de
