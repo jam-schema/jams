@@ -1,0 +1,29 @@
+author:
+  -
+    string-name:
+    surname: Colomb
+    given-names: Julien
+    email: julien.colomb@fu-berlin.de
+    PID:
+      type: orcid-id
+      id: https://orcid.org/0000-0002-3127-5520
+    role:
+      Conceptualization: created first prototype
+    affiliation:
+      aff_01
+    part-of-group: NA   
+    attributes:
+      is.corresponding.author: yes
+      type: author
+    
+Affiliation:
+  - refid: aff_01
+    name: Humboldt-Universität zu Berlin, SFB1315, Inst. of Biology, Charitéplatz 1,  10117 Berlin
+    PID:
+      type: RINGGOLD
+      id: 9373
+    city: Berlin
+    region: Berlin
+    postal.code: 10117
+    country.code: DE
+    country: Germany
