@@ -8,6 +8,8 @@ author:
       type: orcid-id
       id: 
     role:
+      vocab-term-identifier: free text explanation
+      vocab-term-identifier: free text explanation
     affiliation:
       aff_01
     part-of-group: NA   
@@ -19,7 +21,6 @@ author:
     
 Affiliation:
   - refid: 
-
     institution:  
     PID:
       type: RINGGOLD
