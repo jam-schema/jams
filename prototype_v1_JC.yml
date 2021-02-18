@@ -3,7 +3,8 @@ author:
     string-name:
     surname: 
     given-names: 
-    email: 
+    email:
+    phone:
     PID:
       type: orcid-id
       id: 
@@ -14,6 +15,8 @@ author:
     attributes:
       is.corresponding.author: no
       type: author
+      deceased: no
+      equal contribution: no
     
 Affiliation:
   - refid: 
