@@ -14,7 +14,7 @@ author:
       aff_01
     part-of-group: NA   
     attributes:
-      is.corresponding.author: no
+      is-corresponding-author: no
       type: author
       contributed-equally: no
       byline-position:
@@ -31,6 +31,6 @@ Affiliation:
       street-address:  
     city: 
     region: 
-    postal.code: 
+    postal-code: 
     country.code: 
     country: 
