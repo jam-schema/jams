@@ -9,23 +9,30 @@ author:
       type: orcid-id
       id: 
     role:
+      vocab-term-identifier: free text explanation
+      vocab-term-identifier: free text explanation
     affiliation:
       aff_01
     part-of-group: NA   
     attributes:
-      is.corresponding.author: no
+      is-corresponding-author: no
       type: author
       deceased: no
       equal contribution: no
+      byline-position:
     
 Affiliation:
   - refid: 
-    name: 
+    institution:  
     PID:
       type: RINGGOLD
       id: 
+    details: 
+      group: 
+      department:  
+      street-address:  
     city: 
     region: 
-    postal.code: 
+    postal-code: 
     country.code: 
     country: 
