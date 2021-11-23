@@ -1,5 +1,5 @@
 Authorgroup:
-  -
+  - refid: gr1
     string-name:
     role:
       - vocab-term-identifier: free text explanation
