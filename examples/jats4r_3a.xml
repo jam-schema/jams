@@ -1,0 +1,18 @@
+<contrib-group content-type="authors">
+  <contrib contrib-type="author">
+    <name>
+    <surname>Mitchell</surname>
+    <given-names>Glenn</given-names>
+    </name>
+    <xref ref-type="aff" rid="aff1 aff2"><sup>a,b</sup></xref>
+      </contrib>
+      <contrib contrib-type="author">
+        <name>
+        <surname>Ahearn</surname>
+        <given-names>Susan</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff2"><sup>b</sup></xref>
+          </contrib>
+          <aff id="aff1"><label>a</label><institution>Department of Education, Memorial University of Newfoundland</institution>, <city>St. John’s</city>, <state>NF</state> <postal-code>A0J 1W0</postal-code>, <country country=”ca”>Canada</country></aff>
+            <aff id="aff2"><label>b</label><institution>Department of Psychology, Memorial University of Newfoundland</institution>, <city>St. John’s</city>, <state>NF</state> <postal-code>A0J 1W0</postal-code>, <country country=”ca”>Canada</country></aff>
+</contrib-group>

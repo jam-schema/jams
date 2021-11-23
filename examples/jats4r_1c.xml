@@ -1,0 +1,17 @@
+<contrib-group>
+    <contrib contrib-type="author">
+        <name>
+            <surname>Kosaki</surname>
+            <given-names>Mika</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+    </contrib>
+    <contrib contrib-type="author">
+        <name>
+            <surname>Duchesneau</surname>
+            <given-names>Audrey</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+    </contrib>
+</contrib-group>
+<aff id="aff1"><label>1</label> Department of Biology, McGill University, Montréal, QC </aff>

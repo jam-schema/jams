@@ -1,0 +1,26 @@
+<contrib-group content-type="authors">
+    <contrib contrib-type="author">
+        <name>
+            <surname>Voth</surname>
+            <given-names>Irma</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff1 aff2"><sup>a,b</sup></xref>
+    </contrib>
+    <contrib contrib-type="author">
+        <name>
+            <surname>Von Risen</surname>
+            <given-names>Lottie</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff2"><sup>b</sup></xref>
+    </contrib>
+    <aff id="aff1"><label>a</label>
+        <institution-wrap><institution-id institution-id-type=”ringgold”>1812</institution-id><institution>Harvard University</institution></institution-wrap>
+            <institution-wrap><institution-id institution-id-type=”ringgold”>2188</institution-id><institution>Harvard Law School</institution></institution-wrap>
+                <city>Cambridge</city>, <state>MA</state> <postal-code>02138</postal-code>, <country @country=”us”>United States</country>
+    </aff>
+    <aff id="aff2"><label>b</label>
+        <institution-wrap><institution-id institution-id-type=”ringgold”>89611</institution-id><institution>Dalhousie University Faculty of Agriculture</institution></institution-wrap>
+            <institution-wrap><institution-id institution-id-type=”ringgold”>468452</institution-id><institution>Dalhousie University Department of Plant Food</institution></institution-wrap>
+                <city>Halifax</city>, <state>NS</state> <postal-code>B3H 4R2</postal-code>, <country @country=”ca”>Canada</country>
+    </aff>
+</contrib-group>

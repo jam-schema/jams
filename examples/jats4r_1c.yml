@@ -1,0 +1,15 @@
+author:
+  -
+    surname: Kosaki
+    given-names: Mika
+    affiliation:
+      aff_01
+  -
+    surname: Duchesneau
+    given-names: Audrey
+    affiliation:
+      aff_01      
+    
+Affiliation:
+  - refid: aff_01
+    institution: Department of Biology, McGill University, Montréal, QC  

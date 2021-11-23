@@ -1,0 +1,13 @@
+<contrib-group><contrib-group> <contrib contrib-type=”author”> 
+     <collab>The authors and affiliations working group <contrib-group> <contrib>
+    <string-name>Prince Charles </string-name>     
+    <xref ref-type=”aff” rid=”aff1”/>  </contrib><contrib>
+        <string-name><surname>Cook</surname><given-names>James</given-names></string-name>
+        <xref ref-type=”aff” rid=”aff2”/></contrib> 
+            <aff id=”aff1”>Buckingham Palace, England</aff>
+            <aff id=”aff2”>Royal Navy, London, UK</aff>
+</contrib-group> </collab>
+    <xref rid=”aff3” ref-type=”aff3”/>
+    </contrib>
+        <aff id=”aff3”>Dept. Of Philosophy, University of XML</aff>
+</contrib-group>

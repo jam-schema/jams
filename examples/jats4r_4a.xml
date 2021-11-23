@@ -1,0 +1,10 @@
+<contrib-group>
+    <contrib contrib-type=”author”>
+        <collab>The authors and affiliations working group </collab>
+        <aff id=”aff3”>Dept. Of Philosophy, University of XML</aff>
+    </contrib>
+    <contrib contrib-type=”author”>
+        <string-name>Prince Charles </string-name>
+        <aff id=”aff1”>Buckingham Palace, England</aff>
+    </contrib>
+</contrib-group>

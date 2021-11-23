@@ -1,0 +1,20 @@
+<contrib-group>
+    <contrib contrib-type="editor">
+        <name>
+            <surname>Robichaud</surname>
+            <given-names>Monique</given-names>
+        </name>
+        <aff>Simon Fraser University</aff>
+    </contrib>
+</contrib-group>
+<contrib-group>
+    <contrib contrib-type="author">
+        <name>
+            <surname>Juretschko</surname>
+            <given-names>Stefan</given-names>
+        </name>
+        <xref ref-type="aff" rid="aff1"><sup>a</sup></xref>
+    </contrib>
+    <aff id="aff1"><label>a</label>Northwell Health Laboratories, Pathology and
+        Laboratory Medicine, Lake Success, New York, USA</aff>
+</contrib-group>
