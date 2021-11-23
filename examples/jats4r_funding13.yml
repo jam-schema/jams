@@ -1,0 +1,52 @@
+Author:
+  -
+    surname: Carberry
+    given-names: Josiah Stinkney
+    PID:
+      type: orcid-id
+      id: https://orcid.org/0000-0002-1825-0097
+    funding:
+      fund_01  
+      fund_02
+      fund_03
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position:
+    
+Funding: 
+  - refid: fund_01
+    source-institution:
+      name: Czech Science Foundation
+      country:
+      id-type: doi
+      id:
+    award:
+      name:
+      desc:
+      id-type: doi
+      id: 10.13039/501100001824
+  - refid: fund_02
+    source-institution:
+      name: Jenny Cooper University
+      country: US
+      id-type: 
+      id: 
+    award:
+      name: Tommy Tutone Grant
+      desc: Postdoctoral fellowship
+      id-type:
+      id: 8675309
+  - refid: fund_03
+    source-institution:
+      name: European Social Fund
+      country: EU
+      id-type: doi
+      id: 10.13039/501100004895
+    award:
+      name: 
+      desc: 
+      id-type:
+      id: 2016 FGR 0031
