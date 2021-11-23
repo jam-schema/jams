@@ -2,8 +2,8 @@ Authorgroup:
   -
     string-name:
     role:
-      vocab-term-identifier: free text explanation
-      vocab-term-identifier: free text explanation
+      - vocab-term-identifier: free text explanation
+      - vocab-term-identifier: free text explanation      
     affiliation:
       aff_01
     funding:
@@ -26,8 +26,8 @@ Author:
       type: orcid-id
       id: 
     role:
-      vocab-term-identifier: free text explanation
-      vocab-term-identifier: free text explanation
+      - vocab-term-identifier: free text explanation
+      - vocab-term-identifier: free text explanation
     affiliation:
       aff_01
     funding:
