@@ -12,4 +12,6 @@ author:
     
 Affiliation:
   - refid: aff_01
-    institution: Department of Biology, McGill University, Montréal, QC  
+    institution: 
+      -
+        name: Department of Biology, McGill University, Montréal, QC  

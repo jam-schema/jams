@@ -25,8 +25,14 @@ Author:
     
 Affiliation:
   - refid: aff1
-    institution: Buckingham Palace, England  
+    institution: 
+      -
+        name:  Buckingham Palace, England  
   - refid: aff2
-    institution: Royal Navy, London, UK      
+    institution: 
+      -
+        name:  Royal Navy, London, UK      
   - refid: aff3
-    institution:  Dept. Of Philosophy, University of XML
+    institution: 
+      -
+        name:  Dept. Of Philosophy, University of XML

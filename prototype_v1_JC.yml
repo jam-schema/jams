@@ -42,19 +42,21 @@ Author:
     
 Affiliation:
   - refid: 
-    institution:  
-    PID:
-      type: RINGGOLD
-      id: 
-    details: 
-      group: 
-      department:  
-      street-address:  
-    city: 
-    region: 
-    postal-code: 
-    country-code: 
-    country: 
+    institution: 
+      -
+        name:
+        PID:
+          type: RINGGOLD
+          id: 
+        details: 
+          group: 
+          department:  
+          street-address:  
+        city: 
+        region: 
+        postal-code: 
+        country-code: 
+        country: 
 
 Funding: 
   - refid: 

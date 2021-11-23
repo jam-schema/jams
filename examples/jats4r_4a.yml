@@ -24,8 +24,12 @@ Author:
     
 Affiliation:
   - refid: aff1
-    institution: Buckingham Palace, England  
+    institution: 
+      -
+        name:  Buckingham Palace, England  
   - refid: aff3
-    institution:  University of XML
-    details: 
-      department:  Dept. Of Philosophy
+    institution: 
+      -
+        name:  University of XML
+        details: 
+          department: Dept. Of Philosophy
