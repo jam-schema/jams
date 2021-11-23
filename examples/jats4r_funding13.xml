@@ -1,0 +1,27 @@
+ <funding-group>
+    <award-group id="ag1">
+      	<funding-source>
+        	<institution>Czech Science Foundation</institution>
+      	</funding-source>
+      	<award-id award-id-type="doi">10.13039/501100001824</award-id>
+    	</award-group>
+    	<award-group id="ag2">
+      	<funding-source country="US">
+           	<institution>Jenny Cooper University</institution>
+        	</funding-source>
+      	<award-id>8675309</award-id>
+      	<award-name>Tommy Tutone Grant</award-name>
+      	<award-desc>Postdoctoral fellowship</award-desc>
+     </award-group>
+     <award-group id="ag3">
+        <funding-source country="EU">
+            <institution-wrap>
+                <institution-id institution-id-type="doi" vocab="open-funder-registry"
+                    vocab-identifier="10.13039/open_funder_registry">
+                    10.13039/501100004895</institution-id>
+                <institution>European Social Fund</institution>
+            </institution-wrap>
+        </funding-source>
+        <award-id>2016 FGR 0031</award-id>
+    </award-group>
+</funding-group>

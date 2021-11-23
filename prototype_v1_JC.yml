@@ -1,4 +1,21 @@
-author:
+Authorgroup:
+  -
+    string-name:
+    role:
+      vocab-term-identifier: free text explanation
+      vocab-term-identifier: free text explanation
+    affiliation:
+      aff_01
+    funding:
+      fund_01
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position:
+      
+Author:
   -
     string-name:
     surname: 
@@ -13,6 +30,8 @@ author:
       vocab-term-identifier: free text explanation
     affiliation:
       aff_01
+    funding:
+      fund_01  
     part-of-group: NA   
     attributes:
       is-corresponding-author: no
@@ -36,4 +55,19 @@ Affiliation:
     postal-code: 
     country-code: 
     country: 
+
+Funding: 
+  - refid: 
+    source-institution: 
+      name: 
+      country:
+      id-type: doi
+      id:
+    award:
+      name:
+      desc:
+      id-type: doi
+      id:
+      
+
     
