@@ -1,6 +1,9 @@
 Authorgroup:
   - refid: gr1
-    string-name:
+    string-name: this is a group name
+    PID:
+      type: URL
+      id: https://www.example.com
     role:
       - vocab-term-identifier: free text explanation
       - vocab-term-identifier: free text explanation      
@@ -13,63 +16,64 @@ Authorgroup:
       type: author
       deceased: no
       equal-contrib: no
-      byline-position:
+      byline-position: 2
       
 Author:
   -
-    string-name:
-    surname: 
-    given-names: 
-    email:
-    phone:
+    string-name: name to use
+    surname: Doe
+    given-names: John
+    email: johndoe@example.com
+    phone: 0049 15200000000
     PID:
       type: orcid-id
       id: 
     role:
       - vocab-term-identifier: free text explanation
-      - vocab-term-identifier: free text explanation
+      - Visualization: produced figure 4
     affiliation:
       aff_01
     funding:
       fund_01  
-    part-of-group: NA   
+    part-of-group:
+      gr1   
     attributes:
       is-corresponding-author: no
       type: author
       deceased: no
       equal-contrib: no
-      byline-position:
+      byline-position: 1
     
 Affiliation:
-  - refid: 
+  - refid: aff_01
     institution: 
       -
-        name:
+        name: institutionname
         PID:
           type: RINGGOLD
-          id: 
+          id: 9144
         details: 
-          group: 
-          department:  
-          street-address:  
-        city: 
-        region: 
-        postal-code: 
-        country-code: 
-        country: 
+          group: groupname
+          department:  department of example
+          street-address:  streetexample 3
+        city: Berlin
+        region: Berlin
+        postal-code: 12049
+        country-code: DE
+        country: Germany
 
 Funding: 
-  - refid: 
+  - refid: fund_01
     source-institution: 
-      name: 
-      country:
+      name: DFG
+      country: DE
       id-type: doi
-      id:
+      id: 10.13039/501100001659
     award:
-      name:
-      desc:
-      id-type: doi
-      id:
+      name: "SFB 1315:  Mechanisms and disturbances in memory consolidation: From synapses to systems"
+      desc: Funding sub-type
+      id-type: GRANT_NUMBER
+      id: 327654276
       
 
     
