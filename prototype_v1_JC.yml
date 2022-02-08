@@ -29,7 +29,7 @@ Author:
       type: orcid-id
       id: 
     role:
-      - vocab-term-identifier: free text explanation
+      - Data curation
       - Visualization: produced figure 4
     affiliation:
       aff_01

@@ -1,0 +1,16 @@
+<contrib-group>
+    <contrib>
+        <string-name>
+            <given-names>Patrick</given-names>
+            <surname>McCaw</surname>
+        </string-name>
+        <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Data Collection</role>
+    </contrib>
+    <contrib>
+        <string-name>
+            <given-names>Fred</given-names>
+            <surname>Vanvleet</surname>
+        </string-name>
+        <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+    </contrib>
+</contrib-group>

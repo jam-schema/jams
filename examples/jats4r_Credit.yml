@@ -1,0 +1,25 @@
+Author:
+  -
+    string-name: 
+    surname: McCaw
+    given-names: Patrick
+    role:
+      - Investigation: Data Collection
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 1
+  -
+    string-name: 
+    surname: Vanvleet
+    given-names: Fred
+    role:
+      - Investigation
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 2
