@@ -1,0 +1,207 @@
+Authorgroup:
+  - refid: gr1
+    string-name: this is a group name
+    PID:
+      type: URL
+      id: https://www.example.com/gr1
+    role:
+      - Investigation   
+    affiliation:
+      aff_01
+    funding:
+      fund_01
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 2
+  - refid: gr2no members
+    string-name: empty group
+    PID:
+      type: URL
+      id: https://www.example.com/gr2
+    role:
+      - data curation  
+    affiliation:
+      aff_02
+      aff_03
+    funding:
+      fund_02
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 3      
+      
+Author:
+  -
+    string-name:
+    surname: Doe1
+    given-names: John
+    email: johndoe@example.com
+    phone: 0049 15200000000
+    PID:
+      type: orcid-id
+      id: 0000-0002-3127-5520
+    role:
+      - Data curation
+      - Visualization: produced figure 4
+    affiliation:
+      aff_01
+    funding:
+      fund_01  
+    part-of-group:
+      gr1   
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: NA
+  -
+    string-name:
+    surname: Doe2
+    given-names: John
+    email: johndoe2@example.com
+    phone: 0049 15200000000
+    PID:
+      type: orcid-id
+      id: 0000-0002-3127-5520
+    role:
+      - Data curation
+      - Visualization
+    affiliation:
+      aff_03
+    funding:
+      fund_03  
+      fund_04
+    part-of-group:
+    attributes:
+      is-corresponding-author: yes
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 1    
+  -
+    string-name: john doe3
+    surname:
+    given-names:
+    email: johndoe3@example.com
+    PID:
+      type: orcid-id
+      id: 0000-0002-3127-5520
+    role:
+      - Data curation
+      - Visualization
+    affiliation:
+      aff_01
+    funding:
+      fund_01  
+    part-of-group:
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 4    
+    
+Affiliation:
+  - refid: aff_01
+    institution: 
+      -
+        name: institutionname1
+        PID:
+          type: RINGGOLD
+          id: 9144
+        details: 
+          group: groupname
+          department:  department of example
+          street-address:  streetexample 3
+        city: Berlin
+        region: Berlin
+        postal-code: 12049
+        country-code: DE
+        country: Germany
+      -
+        name: institutionname2
+        PID:
+          type: RINGGOLD
+          id: 9144
+        details: 
+          group: groupname2
+          department:  department of example2
+          street-address:  streetexample 3
+        city: Berlin
+        region: Berlin
+        postal-code: 12049
+        country-code: DE
+        country: Germany  
+  - refid: aff_02
+    institution: 
+      -
+        name: institutionname3
+        PID:
+          type: RINGGOLD
+          id: 9143
+        details: 
+          group: different-groupname
+          department:  department of example
+          street-address:  streetexample 3
+        city: potsdam
+        region: Berlin
+        postal-code: 12049
+        country-code: DE
+        country: Germany      
+  - refid: aff_03
+    institution: 
+      -
+        name: institutionname44
+        PID:
+          type: ROR
+          id: 01hcx6992
+        details: 
+          group: SFB1315, AG Larkum
+          department:  department of biology
+          street-address:  Charitéplatz 1
+        city: Berlin
+        region: Berlin
+        postal-code: 12049
+        country-code: DE
+        country: Germany            
+
+Funding: 
+  - refid: fund_01
+    source-institution: 
+      name: DFG
+      country: DE
+      id-type: doi
+      id: 10.13039/501100001659
+    award:
+      name: "SFB 1315:  Mechanisms and disturbances in memory consolidation: From synapses to systems"
+      desc: Funding sub-type
+      id-type: GRANT_NUMBER
+      id: 327654276
+  - refid: fund_02
+    source-institution: 
+      name: NIH
+    award:
+      name: getthecash
+      desc: Postodoctoral fellow
+      id-type: GRANT_NUMBER
+      id: 327654e   
+  - refid: fund_03
+    source-institution: 
+      name: DFG
+      country: DE
+      id-type: RINGGOLD
+      id: 39045
+    award:
+      name: "Genetic dissection of octopamine action in Drosophila motivation, reward and motor control"
+      desc: Funding sub-type
+      id-type: GRANT_NUMBER
+      id: grant.175436592    
+      
+
+    
