@@ -1,0 +1,38 @@
+Authorgroup:
+  - refid: gr1
+    string-name: The authors and affiliations working group
+    affiliation:
+      aff3
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 1
+      
+Author:
+  -
+    string-name: Prince Charles
+    affiliation:
+      aff1
+    part-of-group: gr1      
+  -
+    surname: Cook
+    given-names: James
+    affiliation:
+      aff2
+    part-of-group: gr1      
+    
+Affiliation:
+  - refid: aff1
+    institution: 
+      -
+        name:  Buckingham Palace, England  
+  - refid: aff2
+    institution: 
+      -
+        name:  Royal Navy, London, UK      
+  - refid: aff3
+    institution: 
+      -
+        name:  Dept. Of Philosophy, University of XML

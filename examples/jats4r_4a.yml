@@ -1,0 +1,35 @@
+Authorgroup:
+  -
+    string-name: The authors and affiliations working group
+    affiliation:
+      aff3
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 1
+      
+Author:
+  -
+    string-name: Prince Charles
+    affiliation:
+      aff1
+    attributes:
+      is-corresponding-author: no
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 2
+    
+Affiliation:
+  - refid: aff1
+    institution: 
+      -
+        name:  Buckingham Palace, England  
+  - refid: aff3
+    institution: 
+      -
+        name:  University of XML
+        details: 
+          department: Dept. Of Philosophy

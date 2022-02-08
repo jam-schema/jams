@@ -1,0 +1,51 @@
+ <funding-group>
+    <award-group id="ag1">
+      	<funding-source>
+        	<institution>Czech Science Foundation</institution>
+      	</funding-source>
+      	<award-id award-id-type="doi">10.13039/501100001824</award-id>
+      	<principal-award-recipient>
+            <name>
+                <surname>Carberry</surname>
+                <given-names>Josiah Stinkney</given-names>
+            </name>
+            <contrib-id contrib-id-type="orcid" authenticated="true">
+                https://orcid.org/0000-0002-1825-0097</contrib-id>
+        </principal-award-recipient>
+    	</award-group>
+    	<award-group id="ag2">
+      	<funding-source country="US">
+           	<institution>Jenny Cooper University</institution>
+        	</funding-source>
+      	<award-id>8675309</award-id>
+      	<award-name>Tommy Tutone Grant</award-name>
+      	<award-desc>Postdoctoral fellowship</award-desc>
+      	<principal-award-recipient>
+            <name>
+                <surname>Carberry</surname>
+                <given-names>Josiah Stinkney</given-names>
+            </name>
+            <contrib-id contrib-id-type="orcid" authenticated="true">
+                https://orcid.org/0000-0002-1825-0097</contrib-id>
+        </principal-award-recipient>
+     </award-group>
+     <award-group id="ag3">
+        <funding-source country="EU">
+            <institution-wrap>
+                <institution-id institution-id-type="doi" vocab="open-funder-registry"
+                    vocab-identifier="10.13039/open_funder_registry">
+                    10.13039/501100004895</institution-id>
+                <institution>European Social Fund</institution>
+            </institution-wrap>
+        </funding-source>
+        <award-id>2016 FGR 0031</award-id>
+        <principal-award-recipient>
+            <name>
+                <surname>Carberry</surname>
+                <given-names>Josiah Stinkney</given-names>
+            </name>
+            <contrib-id contrib-id-type="orcid" authenticated="true">
+                https://orcid.org/0000-0002-1825-0097</contrib-id>
+        </principal-award-recipient>
+    </award-group>
+</funding-group>

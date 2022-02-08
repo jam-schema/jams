@@ -13,16 +13,20 @@ author:
     
 Affiliation:
   - refid: aff_01
-    institution:  Department of Education, Memorial University of Newfoundland
-    city: St. John’s
-    region: NF
-    postal-code: A0J 1W0
-    country-code: ca
-    country: Canada
+    institution: 
+      -
+        name:  Department of Education, Memorial University of Newfoundland
+        city: St. John’s
+        region: NF
+        postal-code: A0J 1W0
+        country-code: ca
+        country: Canada
   - refid: aff_01
-    institution: Department of Psychology, Memorial University of Newfoundland
-    city: St. John’s
-    region: NF
-    postal-code: A0J 1W0
-    country-code: ca
-    country: Canada    
+    institution: 
+      -
+        name: Department of Psychology, Memorial University of Newfoundland
+        city: St. John’s
+        region: NF
+        postal-code: A0J 1W0
+        country-code: ca
+        country: Canada    
