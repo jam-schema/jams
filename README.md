@@ -4,10 +4,11 @@ JAMS = Journal Article Metadata Schema
 Standardized method to represent scholarly metadata in JSON or YAML,
 focusing on authors/contributors information.
 
-A [first yaml schema](/Jamschema_v1.yml) is ready for community review, validation and tests.
-It was based on [JATS4R recommendations](https://jats4r.org/recommendations/), and what orcid can provide (see requirement folder)
+A [first yaml schema](/Jamschema_v1.yml) is ready for documentation, community review, validation and tests.
+It was based on [JATS4R recommendations](https://jats4r.org/recommendations/)
+and what orcid can provide (see requirement folder).
 
-Project Background
+Objectives
 ==================
 
 Some of us got frustrated when needing to re-use an author list for different
@@ -27,11 +28,13 @@ This lead to this this project that wants to:
 Community
 ==================
 
-Please see https://github.com/jam-schema/jams/issues/7 to participate in our efforts.
+We have been working openly and collaboratively using Github and virtual meetings.
+We have met pretty irregularly so far, and will welcome any suggestion, feedback or help.
+
 We do have a code of conduct and a contibuting section in this repository,
 but we are not using GitHub as our main communication channel.
+Please see https://github.com/jam-schema/jams/issues/7 to participate in our efforts.
 
-We have met pretty irregularly so far, and will welcome any suggestion, feedback or help.
 
 
 The Initiators
