@@ -1,90 +1,47 @@
-Journal Article Metadata Schema
+JAMS = Journal Article Metadata Schema
 ===============================
 
-Standardized method to represent scholarly metadata in JSON or YAML.
+Standardized method to represent scholarly metadata in JSON or YAML,
+focusing on authors/contributors information.
 
+A [first yaml schema](/Jamschema_v1.yml) is ready for documentation, community review, validation and tests.
+It was based on [JATS4R recommendations](https://jats4r.org/recommendations/)
+and what orcid can provide (see requirement folder).
 
-Project Background
+Objectives
 ==================
 
-We are using different tools to produce and use author lists, and it would be great if we could transform an author list written for one tool into the author list another tool is using.
-To do this transformation, we want to follow the pandoc "sandglass" logic where a general representation is used as a flexible intermediate format to convert between different author metadata formats.
-We want to develop an open standard for this general metadata representation.
-For this purpose, we are trying to initiate a braod discussion and build a community of people interested in the creation and exchange of author lists.
+Some of us got frustrated when needing to re-use an author list for different
+research outputs (grants, papers, datasets, software,...),
+other want a way to create JATSXML outputs from markdown-written documents
+(using pandoc), in order to allow single source publishing.
+This lead to this this project that wants to:
 
-As an example, consider the [`rticles`](https://github.com/rstudio/rticles) R-package or [Manubot](https://manubot.org/).
-With both tools you can write a markdown-based manuscript, translate them to TeX, and render a PDF document.
-The problem is that even within `rticles`, it is not possible to simply switch manuscript styles without adpating the YAML front matter, which contains the author metadata.
-Consider the following simplified example taken from the PLOS template:
+- [X] create a standard way to represent academic authors in a JSON or YAML format
+- [ ] create tool to validate metadata entries
+- [ ] develop pandoc, so this information will find its way in jatsxml, pdf and html outputs
+- [ ] develop tools to transform author lists from one format to another.
+- [ ] develop/list tools to facilitate data entries by researchers
 
-~~~yaml
-author:
-  - name: Alice Anonymous
-    affiliation: Some Institute of Technology
-  - name: Bob Security
-    affiliation: 
-      - Another University
-      - Some Institute of Technology
-      
-address:
-  - code: Some Institute of Technology
-    address: Department 1, Street, City, State, Zip
-  - code: Another University
-    address: Department 2, Street, City, State, Zip
-~~~
 
-Now compare this to the YAML front matter of the JOSS template:
 
-~~~yaml
-authors:
-  - name: Adrian M. Price-Whelan
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author 2
-    affiliation: 2
+Community
+==================
 
-affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University
-   index: 1
- - name: Institution 2
-   index: 2
-~~~
+We have been working openly and collaboratively using Github and virtual meetings.
+We have met pretty irregularly so far, and will welcome any suggestion, feedback or help.
 
-More incompatibilities arise when we switch tools.
-For example, Manubot uses yet another structure to represent this information,
+We do have a code of conduct and a contibuting section in this repository,
+but we are not using GitHub as our main communication channel.
+Please see https://github.com/jam-schema/jams/issues/7 to participate in our efforts.
 
-~~~yaml
-authors:
-  - name: John Doe
-    affiliations:
-      - Department of Something, University of Whatever
-  - name: Jane Roe
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-~~~
 
-while the format for the same information in [zenodo](https://zenodo.org/) looks largely different:
-
-~~~json
-{
-  "creators": [
-    {
-      "affiliation": "Department of Something, University of Whatever",
-      "name": "John Doe",
-      "orcid": "0000-0001-7288-XXXX"
-    }
-~~~
-
-Our goal is to develop a general representation of this information that allows us to convert from one format to another.
-If we succeed, we will for example be able to make these different types of YAML front matter interoperable, via a `pandoc` extension that is responsible for the translation
-(NB: other elements may not be compatible between `rticles` templates, but we hope you got the idea). 
-While we hope to go beyond YAML front matter for manuscript creation, we are planning to start there.
-
-Besides the basic information given in the examples above, the standard should of course include fields for things like, e-mail addresses, ORCiD, and contribution roles (CRediT, CRO, and/or datacite roles).
 
 The Initiators
 ==============
 
 We are people interested using markdown and `pandoc` to write manuscripts, and include contributor lists in research outputs (datasets, software, artilces).
-We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing) and [`papaja`](https://github.com/crsh/papaja).
+We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing), [`sciflow`](https://www.sciflow.net) and [`papaja`](https://github.com/crsh/papaja).
+
+A list of contributor (maybe in the jams format) will be created relatively soon.
 
