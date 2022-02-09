@@ -1,0 +1,70 @@
+Author:
+  -
+    string-name: 
+    surname: Colomb
+    given-names: Julien
+    email: julien.colomb@fu-berlin.de
+    phone:
+    PID:
+      type: orcid-id
+      id: 0000-0002-3127-5520
+    role:
+      - Conceptualization
+      - Project administration
+      - Data curation
+      - Visualization: produced first plan
+    affiliation:
+      HUberlin
+    funding:
+      sfb1315
+      openmake
+    part-of-group:  
+    attributes:
+      is-corresponding-author: yes
+      type: author
+      deceased: no
+      equal-contrib: no
+      byline-position: 1
+    
+Affiliation:
+  - refid: HUberlin
+    institution: 
+      -
+        name: Humboldt Universität zu Berlin
+        PID:
+          type: RINGGOLD
+          id: 9373
+        details: 
+          group: SFB1315, AG Larkum
+          department:  Department of biology
+          street-address:  Charitéplatz 1
+        city: Berlin
+        region: Berlin
+        postal-code: 10117
+        country-code: DE
+        country: Germany
+
+Funding: 
+  - refid: sfb1315
+    source-institution: 
+      name: DFG
+      country: DE
+      id-type: doi
+      id: 10.13039/501100001659
+    award:
+      name: "SFB 1315:  Mechanisms and disturbances in memory consolidation: From synapses to systems"
+      desc: Funding sub-type
+      id-type: GRANT_NUMBER
+      id: 327654276
+
+  - refid: openmake
+    source-institution: 
+      name: "the Federal Ministry of Education and Research (BMBF) and the state of Berlin under the Excellence Strategy of the Federal Government and the Länder"
+      country: DE
+      id-type: 
+      id: 
+    award:
+      name: "Open.Make: toward open FAIR hardware"
+      desc: BUA grant
+      id-type: 
+      id:    
