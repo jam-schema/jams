@@ -17,7 +17,7 @@ other want a way to create JATSXML outputs from markdown-written documents
 (using pandoc), in order to allow single source publishing.
 This lead to this this project that wants to:
 
-- [ ] create a standard way to represent academic authors in a JSON or YAML format
+- [X] create a standard way to represent academic authors in a JSON or YAML format
 - [ ] create tool to validate metadata entries
 - [ ] develop pandoc, so this information will find its way in jatsxml, pdf and html outputs
 - [ ] develop tools to transform author lists from one format to another.
@@ -41,7 +41,7 @@ The Initiators
 ==============
 
 We are people interested using markdown and `pandoc` to write manuscripts, and include contributor lists in research outputs (datasets, software, artilces).
-We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing), [sciflow](https://www.sciflow.net) and [`papaja`](https://github.com/crsh/papaja).
+We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-scholar`](https://github.com/pandoc-scholar/pandoc-scholar), the [`tenzing`](https://github.com/marton-balazs-kovacs/tenzing), [`sciflow`](https://www.sciflow.net) and [`papaja`](https://github.com/crsh/papaja).
 
 A list of contributor (maybe in the jams format) will be created relatively soon.
 
