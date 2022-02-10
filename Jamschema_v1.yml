@@ -29,8 +29,20 @@ Author:
       type: orcid-id
       id: 
     role:
+      - Conceptualization
       - Data curation
-      - Visualization: produced figure 4
+      - Formal Analysis
+      - Funding acquisition
+      - Investigation: data collection
+      - Methodology
+      - Project administration
+      - Resources
+      - Software
+      - Supervision
+      - Validation
+      - Visualization
+      - Writing – original draft
+      - Writing – review & editing
     affiliation:
       aff_01
     funding:
