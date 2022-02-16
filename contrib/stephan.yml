@@ -1,0 +1,41 @@
+Author:
+  -
+    string-name: sdruskat
+    surname: Druskat
+    given-names: Stephan
+    email: stephan.druskat@dlr.de
+    phone:
+    PID:
+      type: orcid-id
+      # Chose to use the URI version of the ORCID ID as defined here: https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier
+      id: https://orcid.org/0000-0003-4925-7248
+    role:
+      - Testing
+    affiliation:
+      DLR
+    funding:
+    part-of-group: tester
+    attributes:
+      is-corresponding-author: no
+      type: tester
+      deceased: no
+      equal-contrib: no
+      byline-position: 1
+
+Affiliation:
+  - refid: DLR
+    institution: 
+      -
+        name: Deutsches Zentrum für Luft- und Raumfahrt
+        PID:
+          type: RINGGOLD
+          id: 84547
+        details: 
+          group: Sustainable Software Engineering
+          department:  Institute for Software Technology
+          street-address:  Rutherfordstr. 2
+        city: Berlin
+        region: Berlin
+        postal-code: 12489
+        country-code: DE
+        country: Germany
