@@ -1,0 +1,322 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/mjaquiery/jams/master/schema_relaxed.json",
+  "meta": {
+    "type": "object",
+    "properties": {
+      "flat": {
+        "type": "boolean",
+        "default": false,
+        "description": "If flat mode is enabled, all references to other objects must use ids rather than shorthand constructors (strings or object definitions). This mode is intended for machine-readbility where the schema result is exhaustive and fully expanded into separate objects"
+      }
+    }
+  },
+  "definitions": {
+    "Meta": {
+      "numeric_id": {
+        "type": "number",
+        "description": "A unique identifier within instances of the object. For example, an Author and an Institution may both have the id 0, but no two Authors may have the same id as eachother.",
+        "minimum": 0
+      },
+      "score": {
+        "type": "number",
+        "description": "A metric of responsibility or contribution; higher = greater"
+      },
+      "Role_wrapper": {
+        "description": "Role_id of an existing Role, a Role Name from which a Role can be created, or a Role object definition",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Role/properties/Role_id"
+          },
+          {
+            "$ref": "#/definitions/Role"
+          },
+          {
+            "type": "string",
+            "description": "Role Name field"
+          }
+        ]
+      },
+      "Institution_wrapper": {
+        "description": "Institution_id of an existing Institution, a Institution Name from which a Institution can be created, or a Institution object definition",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Institution/properties/Institution_id"
+          },
+          {
+            "$ref": "#/definitions/Institution"
+          },
+          {
+            "type": "string",
+            "description": "Institution Name field"
+          }
+        ]
+      },
+      "Funding_source_wrapper": {
+        "description": "Funding_source_id of an existing Funding_source, a Funding_source Name from which a Funding_source can be created, or a Funding_source object definition",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Funding_source/properties/Funding_source_id"
+          },
+          {
+            "$ref": "#/definitions/Funding_source"
+          },
+          {
+            "type": "string",
+            "description": "Funding_source Name field"
+          }
+        ]
+      },
+      "Author_wrapper": {
+        "description": "Author_id of an existing Author, a Author Name from which a Author can be created, or a Author object definition",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Author/properties/Author_id"
+          },
+          {
+            "$ref": "#/definitions/Author"
+          },
+          {
+            "type": "string",
+            "description": "Author Name field"
+          }
+        ]
+      },
+      "Author_group_wrapper": {
+        "description": "Author_group_id of an existing Author_group or a Author_group object definition",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Author_group/properties/Author_group_id"
+          },
+          {
+            "$ref": "#/definitions/Author_group"
+          }
+        ]
+      },
+      "Author_accreditation_wrapper": {
+        "description": "Author_id of an existing Author, an Author Name from which an Author can be created, or an Author object definition; or an object with the previous labelled Author and a numeric Score field",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Meta/Author_wrapper"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Author": {
+                "$ref": "#/definitions/Meta/Author_wrapper"
+              },
+              "Score": {
+                "$ref": "#/definitions/Meta/score"
+              }
+            },
+            "required": ["Author", "Score"]
+          }
+        ]
+      },
+      "Author_group_accreditation_wrapper": {
+        "description": "Author_group_id of an existing Author_group or an Author_group object definition; or an object with the previous labelled Author_group and a numeric Score field",
+        "oneof": [
+          {
+            "$ref": "#/definitions/Meta/Author_group_wrapper"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Author_group": {
+                "$ref": "#/definitions/Meta/Author_group_wrapper"
+              },
+              "Score": {
+                "$ref": "#/definitions/Meta/score"
+              }
+            },
+            "required": ["Author_group", "Score"]
+          }
+        ]
+      }
+    },
+    "Role": {
+      "type": "object",
+      "properties": {
+        "Role_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the role"
+        },
+        "Description": {
+          "type": "string",
+          "description": "A description of the activities comprising the role"
+        }
+      },
+      "required": ["Role_id", "Name"]
+    },
+    "Institution": {
+      "type": "object",
+      "properties": {
+        "Institution_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the institution"
+        },
+        "Details": {
+          "type": "object",
+          "description": "Detailed properties of the Institution"
+        }
+      },
+      "required": ["Institution_id", "Name"]
+    },
+    "Funding_source": {
+      "type": "object",
+      "properties": {
+        "Funding_source_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the award"
+        },
+        "Institution": {
+          "$ref": "#/definitions/Meta/Institution_wrapper"
+        },
+        "Reference": {
+          "type": "string",
+          "description": "Reference identifier attached to the funding award"
+        },
+        "Description": {
+          "type": "string",
+          "description": "A description of the award"
+        }
+      },
+      "required": ["Funding_source_id", "Name"]
+    },
+    "Author": {
+      "type": "object",
+      "properties": {
+        "Author_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the Author"
+        },
+        "Institutions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Meta/Institution_wrapper"
+          }
+        },
+        "Funding_sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Meta/Funding_source_wrapper"
+          }
+        }
+      },
+      "required": ["Author_id", "Name"]
+    },
+    "Author_group": {
+      "type": "object",
+      "properties": {
+        "Author_group_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Name": {
+          "type": "string",
+          "description": "The name of the group"
+        },
+        "Authors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Meta/Author_wrapper"
+          },
+          "minItems": 2
+        }
+      },
+      "required": ["Author_group_id", "Name", "Authors"]
+    },
+    "Credit": {
+      "type": "object",
+      "properties": {
+        "Credit_id": {
+          "$ref": "#/definitions/Meta/numeric_id"
+        },
+        "Role": {
+          "$ref": "#/definitions/Meta/Role_wrapper"
+        },
+        "Authors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Meta/Author_accreditation_wrapper"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "Author_groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Meta/Author_group_accreditation_wrapper"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": ["Role"],
+      "anyOf": [
+        {"required" : ["Authors"]},
+        {"required" : ["Author_groups"]}
+      ]
+    }
+  },
+  "properties": {
+    "Roles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Meta/Role_wrapper"
+      },
+      "uniqueItems": true
+    },
+    "Institutions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Meta/Institution_wrapper"
+      },
+      "uniqueItems": true
+    },
+    "Funding_sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Meta/Funding_source_wrapper"
+      },
+      "uniqueItems": true
+    },
+    "Authors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Meta/Author_wrapper"
+      },
+      "uniqueItems": true
+    },
+    "Author_groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Meta/Author_group_wrapper"
+      },
+      "uniqueItems": true
+    },
+    "Credits": {
+      "description": "A credit joins zero or more Authors or Author_groups with one or more roles.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Credit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "title": "JSON schema for academic author accreditation",
+  "type": "object",
+  "required": ["Credits"]
+}

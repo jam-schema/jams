@@ -45,3 +45,62 @@ We work on different projects like [GIN](https://gin.g-node.org), [`pandoc-schol
 
 A list of contributor (maybe in the jams format) will be created relatively soon.
 
+
+The Schema
+==============
+
+The schema has two forms: a **flat** form and a normal form.
+The normal form can be turned into the **flat** form in a one-way operation; 
+there are numerous ways in which a **flat** form can be rendered in normal form.
+All JSON files that validate against the **flat** form of the schema will validate against the normal form.
+This is not true in reverse.
+
+The difference between these forms is that in the **flat** form, 
+all objects are defined in full in a single place, 
+and references are established between objects using their identifiers.
+Whereas in normal form you can establish e.g. Roles and Authors by specifying names or objects:
+
+```json
+{
+  "Credits": [
+    {
+      "Role": "Lead author",
+      "Authors": [
+        "Alexandra Smith",
+        {
+          "Author_id": 0,
+          "Name": "Tiny Tim"
+        }
+      ]
+    }
+  ]
+}
+```
+
+in **flat** mode you would have to define each object separately and reference by id:
+
+```json
+{
+  "Roles": [
+    { "Role_id":  0, "Name": "Lead author" }
+  ],
+  "Authors": [
+    { "Author_id": 0, "Name": "Tiny Tim" },
+    { "Author_id": 1, "Name": "Alexandra Smith" }
+  ],
+  "Credits": [
+    { 
+      "Role": 0, 
+      "Authors": [0, 1]
+    }
+  ]
+}
+```
+
+The **flat** mode is designed for machine-readbility while the normal mode is designed for human convenience.
+A parser should be able to validate the JSON's data while expanding it from normal mode to **flat** mode. 
+
+Basic validation of whether a file is structurally correct can be obtained by copying the relevant schema
+(`schema_relaxed.json` for normal mode and `schema_flat.json` for **flat** mode) into the online
+[JSON schema validator](https://www.jsonschemavalidator.net/) and entering the JSON you wish to validate
+in the right-hand box.

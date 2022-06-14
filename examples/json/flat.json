@@ -1,0 +1,53 @@
+{
+  "Credits": [
+    {
+      "Role": 0,
+      "Authors": [
+        {
+          "Author": 12,
+          "Score": 0
+        },
+        {
+          "Author": "Fran",
+          "Score": 3
+        }
+      ],
+      "Author_groups": [
+        {
+          "Author_group": 4,
+          "Score": 10
+        },
+        {
+          "Author_group": 12,
+          "Score": 2
+        }
+      ]
+    },
+    {
+      "Role": 1,
+      "Authors": [
+        {
+          "Author_id": 12,
+          "Name": "Mary"
+        },
+        {
+          "Author": {
+            "Author_id": 82,
+            "Name": "Charlie"
+          },
+          "Score": -2
+        }
+      ]
+    }
+  ],
+  "Roles": [
+    {
+      "Role_id": 1,
+      "Name": "Lead author"
+    },
+    {
+      "Role_id": 7,
+      "Name": "Supervisor"
+    }
+  ]
+}
