@@ -16,6 +16,7 @@
 - zenodo
 - tenzing (beta)
 - Crossref
+- CodeMeta
 
 # spreadsheet
 
@@ -32,5 +33,5 @@
 
 # existing bridges
 
-GIN -> datacite
-.cff -> zenodo
+- GIN -> datacite
+- .cff -> zenodo
