@@ -16,6 +16,7 @@
 - zenodo
 - tenzing (beta)
 - Crossref
+- Stencila (schema.org implementation ?) https://unpkg.com/@stencila/schema@1.18.0/dist/Person.schema.json
 
 # spreadsheet
 
