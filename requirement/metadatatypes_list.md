@@ -11,7 +11,7 @@
 
 # json
 
-- openminds
+- openminds https://github.com/HumanBrainProject/openMINDS_core/blob/v3/schemas/actors/person.schema.tpl.json)
 - datacite
 - zenodo
 - tenzing (beta)
